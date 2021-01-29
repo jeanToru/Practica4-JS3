@@ -1,54 +1,70 @@
 <html>
-  <head>
-    <meta charset="UTF-8" />
-    <style>
-      body {
-        font-family: Lato;
-      }
 
-      .line {
-        margin-bottom: 1rem;
-      }
+<head>
+  <meta charset="UTF-8" />
+  <style>
+    body {
+      font-family: Lato;
+    }
 
-      .line label {
-        display: block;
-      }
-    </style>
-  </head>
+    .line {
+      margin-bottom: 1rem;
+    }
 
-  <body>
-    <h1>Ejercicio de manipular el dom</h1>
-    <p>Abre el archivo <code>script.js</code> para instrucciones</p>
+    .line label {
+      display: block;
+    }
 
-    <hr />
+    .error {
+      background-color: rgb(243, 201, 201);
+      border: 1px solid red;
+    }
 
-    <h3>Validar el siguiente formulario</h3>
-    <form action="">
-      <div class="line">
-        <label for="">Nombre *</label>
-        <input type="text" class="requerido" />
-      </div>
+    .success {
+      padding: 20px;
+      background-color: rgb(88, 214, 141);
+      border: 2px solid rgb(20, 90, 50);
+      text-align: center;
+      width: 200px;
+    }
+  </style>
+</head>
 
-      <div class="line">
-        <label for="">Apellido *</label>
-        <input type="text" class="requerido" />
-      </div>
+<body>
+  <h1>Ejercicio de manipular el dom</h1>
+  <p>Abre el archivo <code>script.js</code> para instrucciones</p>
 
-      <div class="line">
-        <label for="">Email *</label>
-        <input type="email" class="requerido" />
-      </div>
+  <hr />
 
-      <div class="line">
-        <label for="">Telefono</label>
-        <input type="phone" />
-      </div>
+  <h3>Validar el siguiente formulario</h3>
+  <div class="validacion"></div>
+  <form action="">
+    <div class="line">
+      <label for="">Nombre *</label>
+      <input type="name" name="nombre" class="requerido" />
+    </div>
 
-      <button>
-        Enviar
-      </button>
-    </form>
+    <div class="line">
+      <label for="">Apellido *</label>
+      <input type="text" name="apellido" class="requerido" />
+    </div>
 
-    <script src="js/script.js"></script>
-  </body>
+    <div class="line">
+      <label for="">Email *</label>
+      <input type="email" name="email" class="requerido" />
+    </div>
+
+    <div class="line">
+      <label for="">Telefono</label>
+      <input type="phone" />
+    </div>
+
+    <button>
+      Enviar
+    </button>
+  </form>
+
+  <script src="js/script.js"></script>
+</body>
+
 </html>
